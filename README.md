@@ -31,3 +31,12 @@ mirseo connect server1 session(2)
 mirseo bash ls
 mirseo proxy <port> <http.auth.username> <http.auth.password> # 프록시 기반으로 내부 터널링 (cf 이용 / 토큰 입력 필요)
 ```
+
+## 수동 설치 및 운영
+
+```bash
+git clone https://github.com/mirseo/dssh.git
+cd dssh/server
+pip3 install -r requirements.txt
+python3 main.py
+```
